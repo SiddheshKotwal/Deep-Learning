@@ -23,13 +23,14 @@ The primary goal of this assignment is to implement a feedforward neural network
 - Backpropagation: Calculation of gradients and the update of weights using gradient descent.
 - Training: Iterative process to adjust weights and biases to minimize the loss function.
 
-## Neural Network Architecture
+# Neural Network Architecture
 
 - **Input Layer**: 2 neurons (representing the two features of the XOR dataset)
 - **Hidden Layer**: 4 neurons with the Sigmoid activation function
 - **Output Layer**: 1 neuron with the Sigmoid activation function (for binary classification)
 
-### Activation Functions
+## Activation Functions
+
 - **Sigmoid**: This activation function is used in both the hidden and output layers. It maps inputs to a range between 0 and 1, making it suitable for binary classification problems.
   
   The formula for Sigmoid is:
@@ -37,58 +38,78 @@ The primary goal of this assignment is to implement a feedforward neural network
   \sigma(x) = \frac{1}{1 + e^{-x}}
   \]
 
-## Training Details
+# Training Details
 
-- **Loss Function**: Mean Squared Error (MSE) is used to measure the difference between the predicted and actual outputs.
+## Loss Function
+
+- **Mean Squared Error (MSE)** is used to measure the difference between the predicted and actual outputs:
   \[
-  MSE = \frac{1}{n} \sum_{i=1}^n (y_{\text{true}} - y_{\text{pred}})^2
+  \text{MSE} = \frac{1}{n} \sum_{i=1}^n (y_{\text{true}} - y_{\text{pred}})^2
   \]
-- **Optimization**: Gradient Descent is used to minimize the MSE loss function. The weights and biases are updated iteratively using the gradients computed during backpropagation.
-  
+  Where:
+  - \( y_{\text{true}} \) is the actual output
+  - \( y_{\text{pred}} \) is the predicted output
+
+## Optimization
+
+- **Gradient Descent** is used to minimize the MSE loss function. The weights and biases are updated iteratively using the gradients computed during backpropagation.
+
 - **Learning Rate**: A learning rate of 0.1 is used to control the size of the steps taken during optimization.
+
 - **Epochs**: The model is trained for 1000 epochs, during which the weights and biases are adjusted to minimize the loss function.
 
-## Methodology
+# Methodology
 
-### Forward Pass
-In the forward pass, the input data is propagated through the network layers:
-1. **Hidden Layer**: The weighted sum of inputs is calculated, followed by applying the Sigmoid activation function.
-2. **Output Layer**: The weighted sum of hidden layer outputs is calculated, followed by the application of the Sigmoid activation function to produce the final prediction.
+## Forward Pass
 
-### Backpropagation
+- In the forward pass, the input data is propagated through the network layers:
+  1. **Hidden Layer**: The weighted sum of inputs is calculated, followed by applying the Sigmoid activation function.
+  2. **Output Layer**: The weighted sum of hidden layer outputs is calculated, followed by the application of the Sigmoid activation function to produce the final prediction.
+
+## Backpropagation
+
 Backpropagation is used to adjust the weights and biases:
+
 1. **Error Calculation**: The error is calculated as the difference between the predicted and true output values.
 2. **Gradient Calculation**: The gradient of the error with respect to the weights and biases is calculated using the chain rule. This helps in determining how much each weight contributed to the error.
 3. **Weight Update**: The weights and biases are updated using the computed gradients and a predefined learning rate.
 
-### Loss Function
-The Mean Squared Error (MSE) is chosen as the loss function:
+# Loss Function
+
+The **Mean Squared Error (MSE)** is chosen as the loss function:
+
 \[
 \text{MSE} = \frac{1}{n} \sum (y_{\text{true}} - y_{\text{pred}})^2
 \]
+
 Where:
-- \( y_{\text{true}} \) is the actual output,
-- \( y_{\text{pred}} \) is the predicted output.
+- \( y_{\text{true}} \) is the actual output
+- \( y_{\text{pred}} \) is the predicted output
 
 This loss function is used to evaluate how well the network is performing and guide the optimization process.
 
-### Optimization
-Gradient Descent is used to optimize the neural network. The weights are updated using the gradient of the loss with respect to the weights. The update rule is:
+# Optimization
+
+**Gradient Descent** is used to optimize the neural network. The weights are updated using the gradient of the loss with respect to the weights. The update rule is:
+
 \[
 w_{\text{new}} = w_{\text{old}} - \eta \cdot \nabla L(w)
 \]
-Where:
-- \( w_{\text{old}} \) is the old weight,
-- \( w_{\text{new}} \) is the updated weight,
-- \( \eta \) is the learning rate,
-- \( \nabla L(w) \) is the gradient of the loss function with respect to the weights.
 
-## Results
+Where:
+- \( w_{\text{old}} \) is the old weight
+- \( w_{\text{new}} \) is the updated weight
+- \( \eta \) is the learning rate
+- \( \nabla L(w) \) is the gradient of the loss function with respect to the weights
+
+# Results
 
 - **Training Performance**: The neural network successfully learns to solve the XOR problem. Initially, the loss is high, but over 1000 epochs, the network's performance improves as the loss decreases.
-- **Final Accuracy**: The network achieves high accuracy, correctly classifying the XOR inputs.
-- **Visualization of Loss Curve**: The training loss decreases over time, which shows that the network is learning to minimize the error.
   
+- **Final Accuracy**: The network achieves high accuracy, correctly classifying the XOR inputs.
+
+- **Visualization of Loss Curve**: The training loss decreases over time, which shows that the network is learning to minimize the error.
+
 At the end of training, the neural network is able to correctly classify all XOR input combinations.
 
 ## Visualizations

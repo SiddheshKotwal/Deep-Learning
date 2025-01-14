@@ -32,20 +32,20 @@ The primary goal of this assignment is to implement a feedforward neural network
 ## Activation Functions
 
 - **Sigmoid**: This activation function is used in both the hidden and output layers. It maps inputs to a range between 0 and 1, making it suitable for binary classification problems.
-  
-  The formula for Sigmoid is:
-  \[
-  \sigma(x) = \frac{1}{1 + e^{-x}}
-  \]
+
+  The formula for Sigmoid is:  
+  \( \sigma(x) = \frac{1}{1 + e^{-x}} \)
 
 # Training Details
 
 ## Loss Function
 
 - **Mean Squared Error (MSE)** is used to measure the difference between the predicted and actual outputs:
+
   \[
-  \text{MSE} = \frac{1}{n} \sum_{i=1}^n (y_{\text{true}} - y_{\text{pred}})^2
+  \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_{\text{true}} - y_{\text{pred}})^2
   \]
+
   Where:
   - \( y_{\text{true}} \) is the actual output
   - \( y_{\text{pred}} \) is the predicted output
@@ -62,9 +62,10 @@ The primary goal of this assignment is to implement a feedforward neural network
 
 ## Forward Pass
 
-- In the forward pass, the input data is propagated through the network layers:
-  1. **Hidden Layer**: The weighted sum of inputs is calculated, followed by applying the Sigmoid activation function.
-  2. **Output Layer**: The weighted sum of hidden layer outputs is calculated, followed by the application of the Sigmoid activation function to produce the final prediction.
+In the forward pass, the input data is propagated through the network layers:
+
+1. **Hidden Layer**: The weighted sum of inputs is calculated, followed by applying the Sigmoid activation function.
+2. **Output Layer**: The weighted sum of hidden layer outputs is calculated, followed by the application of the Sigmoid activation function to produce the final prediction.
 
 ## Backpropagation
 

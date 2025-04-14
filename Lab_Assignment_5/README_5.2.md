@@ -48,7 +48,7 @@ Shakespeare’s Text from TensorFlow Datasets
 This dataset comprises texts from the works of William Shakespeare. It is selected due to its rich and varied language, making it suitable for training and evaluating sequence prediction models.
 
 **Dataset Source:**  
-[Shakespeare Dataset on TensorFlow Datasets](https://www.tensorflow.org/datasets/catalog/shakespeare)
+[Shakespeare Dataset on TensorFlow Datasets](https://www.tensorflow.org/datasets/catalog/tiny_shakespeare)
 
 The dataset is loaded directly using the `tensorflow_datasets` library.
 
@@ -131,7 +131,7 @@ This repository contains:
 I, [Your Full Name], confirm that the work submitted in this assignment is my own and adheres to academic integrity guidelines.
 
 ## Repository Link
-The complete project is available on GitHub: [https://github.com/your-username/sequence-text-prediction-lstm](https://github.com/your-username/sequence-text-prediction-lstm)
+The complete project is available on GitHub: [https://github.com/SiddheshKotwal/Deep-Learning/tree/b226dd301286866e2acd1acb382236fbefc8bd6c/Lab_Assignment_5](https://github.com/SiddheshKotwal/Deep-Learning/tree/b226dd301286866e2acd1acb382236fbefc8bd6c/Lab_Assignment_5)
 
 ---
 

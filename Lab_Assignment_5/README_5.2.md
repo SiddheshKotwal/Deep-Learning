@@ -131,7 +131,7 @@ This repository contains:
 I, [Your Full Name], confirm that the work submitted in this assignment is my own and adheres to academic integrity guidelines.
 
 ## Repository Link
-The complete project is available on GitHub: [https://github.com/SiddheshKotwal/Deep-Learning/tree/b226dd301286866e2acd1acb382236fbefc8bd6c/Lab_Assignment_5](https://github.com/SiddheshKotwal/Deep-Learning/tree/b226dd301286866e2acd1acb382236fbefc8bd6c/Lab_Assignment_5)
+The complete project is available on GitHub: [https://github.com/SiddheshKotwal/Deep-Learning/tree/0b09065776eed51138f93b6acb80308045d3c10a/Lab_Assignment_5](https://github.com/SiddheshKotwal/Deep-Learning/tree/0b09065776eed51138f93b6acb80308045d3c10a/Lab_Assignment_5)
 
 ---
 
